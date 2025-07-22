@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ave_maria",
+    "title": "Ave Maria",
+    "category": "mariana",
+    "text": "Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e na hora da nossa morte. Amém."
+  },
+  {
+    "id": "pai_nosso",
+    "title": "Pai Nosso",
+    "category": "essencial",
+    "text": "Pai Nosso que estais nos Céus, santificado seja o vosso Nome, venha a nós o vosso Reino, seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação, mas livrai-nos do Mal. Amém."
+  },
+  {
+    "id": "credo",
+    "title": "Credo",
+    "category": "essencial",
+    "text": "Creio em Deus Pai Todo-Poderoso, Criador do céu e da terra. E em Jesus Cristo, seu único Filho, nosso Senhor, que foi concebido pelo poder do Espírito Santo, nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado, desceu à mansão dos mortos, ressuscitou ao terceiro dia, subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém."
+  },
+  {
+    "id": "gloria",
+    "title": "Glória",
+    "category": "essencial",
+    "text": "Glória ao Pai, ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre. Amém."
+  },
+  {
+    "id": "salve_rainha",
+    "title": "Salve Rainha",
+    "category": "mariana",
+    "text": "Salve Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos, os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei, e depois deste desterro mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo. Amém."
+  },
+  {
+    "id": "santo_anjo",
+    "title": "Santo Anjo",
+    "category": "proteção",
+    "text": "Santo Anjo do Senhor, meu zeloso guardador, se a ti me confiou a piedade divina, sempre me rege, guarda, governa e ilumina. Amém."
+  },
+  {
+    "id": "ato_contrição",
+    "title": "Ato de Contrição",
+    "category": "penitência",
+    "text": "Meu Deus, eu me arrependo de todo o coração de vos ter ofendido, porque sois tão bom e amável. Prometo, com a vossa graça, esforçar-me para não mais pecar. Meu Jesus, misericórdia."
+  },
+  {
+    "id": "magnificat",
+    "title": "Magnificat",
+    "category": "mariana",
+    "text": "A minha alma engrandece o Senhor, e o meu espírito se alegra em Deus, meu Salvador, pois olhou para a humildade de sua serva. Doravante todas as gerações me chamarão bem-aventurada, porque o Todo-poderoso fez grandes coisas em meu favor. Santo é o seu nome! Sua misericórdia estende-se de geração a geração sobre os que o temem. Agiu com o seu braço valoroso; dispersou os soberbos nos pensamentos de seus corações. Derrubou governantes de seus tronos, mas exaltou os humildes. Encheu de bens os famintos, mas despediu vazios os ricos. Ajudou a seu servo Israel, lembrando-se de sua misericórdia para com Abraão e seus descendentes para sempre, como dissera a nossos antepassados."
+  },
+  {
+    "id": "memorare",
+    "title": "Memorare (Lembrai-vos)",
+    "category": "mariana",
+    "text": "Lembrai-vos, ó piíssima Virgem Maria, que nunca se ouviu dizer que algum daqueles que têm recorrido à vossa proteção, implorado a vossa assistência, e reclamado o vosso socorro, fosse por vós desamparado. Animado eu, pois, com igual confiança, a vós, Virgem entre todas singular, como a mãe recorro, de vós me valho, e, gemendo sob o peso dos meus pecados, me prostro aos vossos pés. Não desprezeis as minhas súplicas, ó Mãe do Filho de Deus humanado, mas dignai-vos de as ouvir propícia e de me alcançar o que vos rogo. Amém."
+  },
+  {
+    "id": "angelus",
+    "title": "Angelus",
+    "category": "mariana",
+    "text": "O Anjo do Senhor anunciou a Maria, e ela concebeu do Espírito Santo. Ave Maria... Eis aqui a serva do Senhor. Faça-se em mim segundo a vossa palavra. Ave Maria... E o Verbo se fez carne e habitou entre nós. Ave Maria... Rogai por nós, Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo. Oremos: Infundi, Senhor, nós vos pedimos, a vossa graça em nossas almas, para que nós, que pela anunciação do Anjo conhecemos a encarnação de Cristo, vosso Filho, pela sua paixão e cruz, cheguemos à glória da ressurreição. Por Cristo, nosso Senhor. Amém."
+  },
+  {
+    "id": "regina_coeli",
+    "title": "Regina Coeli (Rainha do Céu)",
+    "category": "mariana",
+    "text": "Rainha do céu, alegrai-vos, aleluia. Porque Aquele que merecestes trazer em vosso seio, aleluia. Ressuscitou como disse, aleluia. Rogai a Deus por nós, aleluia. Alegrai-vos e exultai, ó Virgem Maria, aleluia. Porque o Senhor ressuscitou verdadeiramente, aleluia. Oremos: Ó Deus, que vos dignastes alegrar o mundo com a Ressurreição do vosso Filho, Nosso Senhor Jesus Cristo, concedei-nos, vos suplicamos, que, por intercessão da Virgem Maria, sua Mãe, alcancemos as alegrias da vida eterna. Pelo mesmo Cristo, Senhor nosso. Amém."
+  },
+  {
+    "id": "oracao_sao_miguel",
+    "title": "Oração a São Miguel Arcanjo",
+    "category": "proteção",
+    "text": "São Miguel Arcanjo, defendei-nos no combate, sede o nosso refúgio contra as maldades e ciladas do demônio. Ordene-lhe Deus, instantemente o pedimos, e vós, príncipe da milícia celeste, pela virtude divina, precipitai no inferno a Satanás e a todos os espíritos malignos, que andam pelo mundo para perder as almas. Amém."
+  },
+  {
+    "id": "confiteor",
+    "title": "Confiteor (Confesso)",
+    "category": "penitência",
+    "text": "Confesso a Deus todo-poderoso e a vós, irmãos e irmãs, que pequei muitas vezes por pensamentos e palavras, atos e omissões, por minha culpa, minha tão grande culpa. E peço à Virgem Maria, aos anjos e santos e a vós, irmãos e irmãs, que rogueis por mim a Deus, nosso Senhor."
+  },
+  {
+    "id": "oracao_antes_refeicao",
+    "title": "Oração Antes da Refeição",
+    "category": "cotidiano",
+    "text": "Abençoai, Senhor, o alimento que vamos tomar e dai pão àqueles que não o têm. Amém."
+  },
+  {
+    "id": "oracao_depois_refeicao",
+    "title": "Oração Depois da Refeição",
+    "category": "cotidiano",
+    "text": "Nós vos damos graças, Deus Todo-Poderoso, por todos os vossos benefícios, Vós que viveis e reinais pelos séculos dos séculos. Amém."
+  },
+  {
+    "id": "sub_tuum_praesidium",
+    "title": "Sub Tuum Praesidium",
+    "category": "mariana",
+    "text": "À vossa proteção recorremos, Santa Mãe de Deus. Não desprezeis as nossas súplicas em nossas necessidades, mas livrai-nos sempre de todos os perigos, ó Virgem gloriosa e bendita."
+  },
+  {
+    "id": "veni_sancte_spiritus",
+    "title": "Veni Sancte Spiritus",
+    "category": "espírito_santo",
+    "text": "Vinde, Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do Vosso amor. Enviai, Senhor, o Vosso Espírito, e tudo será criado, e renovareis a face da terra. Oremos: Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo, fazei que apreciemos retamente todas as coisas segundo o mesmo Espírito e gozemos sempre da sua consolação. Por Cristo, Senhor nosso. Amém."
+  },
+  {
+    "id": "oracao_fatima",
+    "title": "Oração de Fátima",
+    "category": "mariana",
+    "text": "Ó meu Jesus, perdoai-nos e livrai-nos do fogo do inferno, levai as almas todas para o Céu, principalmente as que mais precisarem."
+  },
+  {
+    "id": "adoro_te_devote",
+    "title": "Adoro Te Devote",
+    "category": "eucarística",
+    "text": "Eu vos adoro devotamente, ó Divindade escondida, que verdadeiramente se oculta sob estas aparências. A Vós, meu coração submete-se todo inteiro, porque, contemplando-Vos, tudo desfalece. A vista, o tato, o gosto falham com relação a Vós, mas, somente em Vos ouvir, em tudo creio. Creio em tudo aquilo que disse o Filho de Deus, nada mais verdadeiro que esta Palavra de Verdade. Na Cruz, estava oculta somente a Divindade, mas aqui, oculta-se também a Humanidade. Eu, contudo, crendo e professando ambas, peço o que pediu o ladrão arrependido. Não vejo, como Tomé, as Vossas chagas, entretanto, confesso-Vos meu Senhor e meu Deus. Fazei que eu sempre creia mais em Vós, em Vós espere, a Vós ame. Ó memorial da morte do Senhor, Pão vivo que dá vida aos homens, dai à minha alma viver de Vós, e a ela saboreie sempre as vossas doçuras. Senhor Jesus, bondoso pelicano, lavai-me, a mim, imundo, em Vosso Sangue, pois que uma única gota faz salvar todo o mundo e apagar todo pecado. Ó Jesus, a quem agora vejo encoberto, peço que se realize o que tanto desejo: que eu veja palpavelmente a Vossa face revelada, e que seja feliz contemplando a Vossa glória. Amém."
+  },
+  {
+    "id": "terco_divina_misericordia",
+    "title": "Terço da Divina Misericórdia",
+    "category": "divina_misericórdia",
+    "text": "Início: Pai Nosso, Ave Maria, Creio.\n\nNas contas grandes: Eterno Pai, eu Vos ofereço o Corpo e Sangue, Alma e Divindade de Vosso diletíssimo Filho, Nosso Senhor Jesus Cristo, em expiação dos nossos pecados e do mundo inteiro.\n\nNas contas pequenas: Pela Sua dolorosa Paixão, tende misericórdia de nós e do mundo inteiro.\n\nNo final (3x): Deus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo inteiro."
+  }
+]

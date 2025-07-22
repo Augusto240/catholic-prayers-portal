@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orações Católicas - Projeto de Augusto Oliveira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --vatican-gold: #FFD700;
+            --vatican-white: #FFFFFF;
+            --vatican-red: #800020;
+            --vatican-blue: #23395B;
+            --light-gold: #FFF0AA;
+            --dark-gold: #BF9B30;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #333;
+            background-color: #F5F5F5;
+            background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--vatican-gold) 0%, var(--dark-gold) 100%);
+            color: var(--vatican-blue);
+            padding: 1rem 0;
+            border-bottom: 5px solid var(--vatican-red);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 15px;
+        }
+        
+        .logo h1 {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            font-size: 24px;
+            margin: 0;
+            color: var(--vatican-blue);
+        }
+        
+        .subtitle {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--vatican-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--vatican-white);
+            color: var(--vatican-red);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(35, 57, 91, 0.8), rgba(35, 57, 91, 0.9)), url('https://upload.wikimedia.org/wikipedia/commons/d/d5/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--vatican-white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .hero h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: var(--vatican-gold);
+            color: var(--vatican-blue);
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-gold);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--vatican-white);
+            border: 2px solid var(--vatican-white);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--vatican-white);
+            color: var(--vatican-blue);
+            transform: translateY(-2px);
+        }
+        
+        main {
+            padding: 40px 0;
+        }
+        
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            color: var(--vatican-blue);
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--vatican-gold);
+            margin: 15px auto 0;
+        }
+        
+        .prayer-search {
+            background-color: var(--vatican-white);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .category-pill {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .category-pill:hover, .category-pill.active {
+            background-color: var(--vatican-gold);
+            color: var(--vatican-blue);
+        }
+        
+        .prayer-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+        
+        .prayer-list {
+            background-color: var(--vatican-white);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .prayer-item {
+            padding: 12px 16px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .prayer-item:hover, .prayer-item.active {
+            background-color: var(--light-gold);
+        }
+        
+        .prayer-item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: var(--vatican-blue);
+        }
+        
+        .prayer-item small {
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .prayer-display {
+            background-color: var(--vatican-white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prayer-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .prayer-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 32px;
+            color: var(--vatican-blue);
+            margin-bottom: 10px;
+        }
+        
+        .prayer-badge {
+            display: inline-block;
+            background-color: var(--light-gold);
+            color: var(--vatican-blue);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .prayer-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            white-space: pre-line;
+        }
+        
+        .prayer-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .action-btn:hover {
+            background-color: var(--vatican-gold);
+            color: var(--vatican-blue);
+        }
+        
+        .daily-prayer {
+            background-color: var(--vatican-blue);
+            color: var(--vatican-white);
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .daily-prayer h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        
+        .daily-prayer p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        /* Seção Sobre */
+        .about-section {
+            background-color: var(--vatican-white);
+            border-radius: 8px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .developer-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .developer-info h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            color: var(--vatican-blue);
+            margin-bottom: 15px;
+        }
+        
+        .developer-info p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .developer-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .developer-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background-color: var(--vatican-blue);
+            color: var(--vatican-white);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        
+        .developer-links a:hover {
+            background-color: var(--vatican-gold);
+            color: var(--vatican-blue);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background-color: var(--vatican-blue);
+            color: var(--vatican-white);
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--vatican-gold);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: var(--vatican-white);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--vatican-gold);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--vatican-white);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--vatican-gold);
+            color: var(--vatican-blue);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+            
+            nav ul {
+                justify-content: center;
+            }
+            
+            .prayer-content, 
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .prayer-list {
+                max-height: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+        }
+        
+        /* Loader */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--vatican-gold);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Modal de impressão */
+        .print-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .print-modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+            font-family: 'Cinzel', serif;
+            color: var(--vatican-blue);
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #777;
+        }
+        
+        .close-btn:hover {
+            color: var(--vatican-red);
+        }
+        
+        .modal-print-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: var(--vatican-gold);
+            color: var(--vatican-blue);
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .modal-print-btn:hover {
+            background-color: var(--dark-gold);
+        }
+        
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        /* Tema escuro para impressão */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .prayer-display {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            header, nav, footer, .prayer-list, .prayer-search, .prayer-actions {
+                display: none;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Coat_of_arms_of_Vatican_City_%282023%E2%80%93present%29.svg" alt="Vatican Coat of Arms">
+                <div>
+                    <h1>Orações Católicas</h1>
+                    <p class="subtitle">Portal de Devoção e Fé</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#prayers">Orações</a></li>
+                    <li><a href="#daily">Oração do Dia</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Ore com o coração e a tradição da Igreja</h2>
+            <p>Descubra o tesouro das orações católicas, tradicionalmente rezadas por milhões de fiéis ao redor do mundo. Uma coleção das mais belas súplicas que inspiram nossa jornada de fé.</p>
+            <div class="hero-buttons">
+                <a href="#prayers" class="btn btn-primary">Explorar Orações</a>
+                <a href="#daily" class="btn btn-secondary">Oração do Dia</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="prayers">
+            <br><br>
+            <h2 class="section-title">Biblioteca de Orações</h2>
+            
+            <div class="prayer-search">
+                <form class="search-form" id="search-form">
+                    <input type="text" class="search-input" id="search-input" placeholder="Buscar orações...">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </form>
+                
+                <div class="category-filters" id="category-filters">
+                    <span class="category-pill active" data-category="all">Todas</span>
+                    <!-- Categorias serão preenchidas via JavaScript -->
+                </div>
+            </div>
+            
+            <div class="prayer-content">
+                <div class="prayer-list" id="prayer-list">
+                    <!-- Lista de orações será preenchida via JavaScript -->
+                    <div class="loader" id="prayers-loader"></div>
+                </div>
+                
+                <div class="prayer-display" id="prayer-display">
+                    <div class="prayer-header">
+                        <h2 id="prayer-title">Selecione uma oração</h2>
+                        <span class="prayer-badge" id="prayer-category"></span>
+                    </div>
+                    
+                    <div class="prayer-text" id="prayer-text">
+                        Por favor, selecione uma oração da lista para visualizar seu conteúdo.
+                    </div>
+                    
+                    <div class="prayer-actions">
+                        <button class="action-btn" id="favorite-btn">
+                            <i class="fas fa-heart"></i> Favorito
+                        </button>
+                        
+                        <button class="action-btn" id="share-btn">
+                            <i class="fas fa-share-alt"></i> Compartilhar
+                        </button>
+                        
+                        <button class="action-btn" id="print-btn">
+                            <i class="fas fa-print"></i> Imprimir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="daily" class="daily-prayer">
+            <h2>Oração do Dia</h2>
+            <p id="daily-prayer-text">Carregando oração do dia...</p>
+            <button class="btn btn-primary" id="random-prayer-btn">Nova Oração Aleatória</button>
+        </section>
+        
+        <!-- Nova seção Sobre -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">Sobre o Desenvolvedor</h2>
+            <div class="about-content">
+                <div>
+                    <img src="https://i.pinimg.com/736x/ad/ca/23/adca239ac630123d7347dfc800218803.jpg" alt="Augusto Oliveira, (foto do sasuke pequeno)" class="developer-img">
+                </div>
+                <div class="developer-info">
+                    <h3>Augusto Oliveira</h3>
+                    <p>Olá! Eu sou o desenvolvedor por trás deste portal de orações católicas. Este projeto foi criado com o intuito de proporcionar um acesso fácil e intuitivo às orações tradicionais da Igreja Católica.</p>
+                    <p>Como católico e desenvolvedor, queria criar uma ferramenta que pudesse ajudar as pessoas em sua jornada de fé, disponibilizando um acervo de orações que pudesse ser acessado a qualquer momento.</p>
+                    <p>Sinta-se à vontade para usar este portal como apoio em sua vida de oração. Se tiver sugestões ou feedback, entre em contato através de um dos canais abaixo.</p>
+                    
+                    <div class="developer-links">
+                        <a href="https://github.com/Augusto240" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/augusto-oliveira-4a8068235/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://augusto240.github.io/Personal-Site/" target="_blank"><i class="fas fa-globe"></i> Portfólio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#prayers">Orações</a></li>
+                        <li><a href="#daily">Oração do Dia</a></li>
+                        <li><a href="#about">Sobre o Desenvolvedor</a></li>
+                        <li><a href="#favorites">Favoritos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categorias</h3>
+                    <ul id="footer-categories">
+                        <!-- Categorias serão preenchidas via JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p>Entre em contato para sugestões, correções ou dúvidas sobre o projeto.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Augusto240" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/augusto-oliveira-4a8068235/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://augusto240.github.io/Personal-Site/" target="_blank" aria-label="Portfólio"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Augusto Oliveira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Impressão -->
+    <div class="print-modal" id="print-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Preparar para Impressão</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            
+            <div id="print-content"></div>
+            
+            <button class="modal-print-btn" id="confirm-print">Imprimir Oração</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Elementos da DOM
+            const searchForm = document.getElementById('search-form');
+            const searchInput = document.getElementById('search-input');
+            const categoryFilters = document.getElementById('category-filters');
+            const prayerList = document.getElementById('prayer-list');
+            const prayersLoader = document.getElementById('prayers-loader');
+            const prayerTitle = document.getElementById('prayer-title');
+            const prayerCategory = document.getElementById('prayer-category');
+            const prayerText = document.getElementById('prayer-text');
+            const favoriteBtn = document.getElementById('favorite-btn');
+            const shareBtn = document.getElementById('share-btn');
+            const printBtn = document.getElementById('print-btn');
+            const dailyPrayerText = document.getElementById('daily-prayer-text');
+            const randomPrayerBtn = document.getElementById('random-prayer-btn');
+            const footerCategories = document.getElementById('footer-categories');
+            const printModal = document.getElementById('print-modal');
+            const closeModal = document.getElementById('close-modal');
+            const printContent = document.getElementById('print-content');
+            const confirmPrint = document.getElementById('confirm-print');
+            
+            // Estado da aplicação
+            let prayers = [];
+            let categories = [];
+            let currentPrayer = null;
+            let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            
+            // Funções auxiliares
+            const formatCategoryName = (category) => {
+                const names = {
+                    'mariana': 'Orações Marianas',
+                    'essencial': 'Orações Essenciais',
+                    'proteção': 'Orações de Proteção',
+                    'penitência': 'Orações de Penitência',
+                    'cotidiano': 'Orações do Cotidiano',
+                    'espírito_santo': 'Orações ao Espírito Santo',
+                    'eucarística': 'Orações Eucarísticas',
+                    'divina_misericórdia': 'Divina Misericórdia'
+                };
+                return names[category] || category.charAt(0).toUpperCase() + category.slice(1);
+            };
+            
+            // Carregar orações
+            const loadPrayers = async () => {
+                try {
+                    prayersLoader.style.display = 'block';
+                    const response = await fetch('/api/prayers');
+                    prayers = await response.json();
+                    renderPrayers(prayers);
+                    
+                    // Extrair categorias únicas
+                    const uniqueCategories = [...new Set(prayers.map(prayer => prayer.category))];
+                    categories = uniqueCategories;
+                    renderCategories(uniqueCategories);
+                    
+                    // Preencher categorias no rodapé
+                    renderFooterCategories(uniqueCategories);
+                    
+                    // Carregar oração aleatória do dia
+                    loadRandomPrayer();
+                } catch (error) {
+                    console.error('Erro ao carregar orações:', error);
+                    prayerList.innerHTML = '<p>Erro ao carregar orações. Por favor, tente novamente mais tarde.</p>';
+                } finally {
+                    prayersLoader.style.display = 'none';
+                }
+            };
+            
+            // Renderizar lista de orações
+            const renderPrayers = (prayersList) => {
+                prayerList.innerHTML = '';
+                
+                if (prayersList.length === 0) {
+                    prayerList.innerHTML = '<p>Nenhuma oração encontrada.</p>';
+                    return;
+                }
+                
+                prayersList.forEach(prayer => {
+                    const item = document.createElement('div');
+                    item.classList.add('prayer-item');
+                    item.dataset.id = prayer.id;
+                    
+                    // Verificar se é um favorito
+                    const isFavorite = favorites.includes(prayer.id);
+                    
+                    item.innerHTML = `
+                        <h3>${prayer.title} ${isFavorite ? '<i class="fas fa-heart" style="color: var(--vatican-red);"></i>' : ''}</h3>
+                        <small>${formatCategoryName(prayer.category)}</small>
+                    `;
+                    
+                    item.addEventListener('click', () => {
+                        document.querySelectorAll('.prayer-item').forEach(i => i.classList.remove('active'));
+                        item.classList.add('active');
+                        displayPrayer(prayer);
+                    });
+                    
+                    prayerList.appendChild(item);
+                });
+            };
+            
+            // Renderizar filtros de categoria
+            const renderCategories = (categoriesList) => {
+                // Manter o filtro "Todas"
+                categoryFilters.innerHTML = '<span class="category-pill active" data-category="all">Todas</span>';
+                
+                categoriesList.forEach(category => {
+                    const pill = document.createElement('span');
+                    pill.classList.add('category-pill');
+                    pill.dataset.category = category;
+                    pill.textContent = formatCategoryName(category);
+                    
+                    pill.addEventListener('click', () => {
+                        document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+                        pill.classList.add('active');
+                        
+                        if (category === 'all') {
+                            renderPrayers(prayers);
+                        } else {
+                            const filtered = prayers.filter(prayer => prayer.category === category);
+                            renderPrayers(filtered);
+                        }
+                    });
+                    
+                    categoryFilters.appendChild(pill);
+                });
+            };
+            
+            // Renderizar categorias no rodapé
+            const renderFooterCategories = (categoriesList) => {
+                footerCategories.innerHTML = '';
+                
+                categoriesList.forEach(category => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = '#prayers';
+                    a.textContent = formatCategoryName(category);
+                    
+                    a.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        
+                        // Ativar o filtro correspondente
+                        document.querySelectorAll('.category-pill').forEach(pill => {
+                            if (pill.dataset.category === category) {
+                                pill.click();
+                            }
+                        });
+                        
+                        // Rolar até a seção de orações
+                        document.getElementById('prayers').scrollIntoView({ behavior: 'smooth' });
+                    });
+                    
+                    li.appendChild(a);
+                    footerCategories.appendChild(li);
+                });
+            };
+            
+            // Exibir oração selecionada
+            const displayPrayer = (prayer) => {
+                currentPrayer = prayer;
+                prayerTitle.textContent = prayer.title;
+                prayerCategory.textContent = formatCategoryName(prayer.category);
+                prayerText.textContent = prayer.text;
+                
+                // Atualizar estado do botão de favorito
+                updateFavoriteButton();
+            };
+            
+            // Atualizar estado do botão de favorito
+            const updateFavoriteButton = () => {
+                if (!currentPrayer) return;
+                
+                const isFavorite = favorites.includes(currentPrayer.id);
+                
+                if (isFavorite) {
+                    favoriteBtn.innerHTML = '<i class="fas fa-heart" style="color: var(--vatican-red);"></i> Remover dos Favoritos';
+                } else {
+                    favoriteBtn.innerHTML = '<i class="far fa-heart"></i> Adicionar aos Favoritos';
+                }
+            };
+            
+            // Carregar oração aleatória
+            const loadRandomPrayer = async () => {
+                try {
+                    const response = await fetch('/api/random');
+                    const prayer = await response.json();
+                    
+                    dailyPrayerText.innerHTML = `
+                        <strong>${prayer.title}</strong><br>
+                        ${prayer.text}
+                    `;
+                } catch (error) {
+                    console.error('Erro ao carregar oração aleatória:', error);
+                    dailyPrayerText.textContent = 'Erro ao carregar oração. Por favor, tente novamente.';
+                }
+            };
+            
+            // Manipuladores de eventos
+            
+            // Busca
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const query = searchInput.value.trim();
+                
+                if (!query) {
+                    renderPrayers(prayers);
+                    return;
+                }
+                
+                const results = prayers.filter(prayer => 
+                    prayer.title.toLowerCase().includes(query.toLowerCase()) || 
+                    prayer.text.toLowerCase().includes(query.toLowerCase())
+                );
+                
+                renderPrayers(results);
+                
+                // Resetar filtros de categoria
+                document.querySelectorAll('.category-pill').forEach(pill => {
+                    pill.classList.remove('active');
+                    if (pill.dataset.category === 'all') {
+                        pill.classList.add('active');
+                    }
+                });
+            });
+            
+            // Favoritos
+            favoriteBtn.addEventListener('click', () => {
+                if (!currentPrayer) return;
+                
+                const index = favorites.indexOf(currentPrayer.id);
+                
+                if (index === -1) {
+                    // Adicionar aos favoritos
+                    favorites.push(currentPrayer.id);
+                } else {
+                    // Remover dos favoritos
+                    favorites.splice(index, 1);
+                }
+                
+                // Salvar no localStorage
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                
+                // Atualizar interface
+                updateFavoriteButton();
+                renderPrayers(prayers); // Re-renderizar para mostrar os ícones de favorito
+            });
+            
+            // Compartilhar
+            shareBtn.addEventListener('click', () => {
+                if (!currentPrayer) return;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: currentPrayer.title,
+                        text: currentPrayer.text,
+                        url: window.location.href
+                    })
+                    .catch(error => console.error('Erro ao compartilhar:', error));
+                } else {
+                    // Fallback para navegadores que não suportam Web Share API
+                    const textArea = document.createElement('textarea');
+                    textArea.value = `${currentPrayer.title}\n\n${currentPrayer.text}`;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    
+                    alert('Oração copiada para a área de transferência!');
+                }
+            });
+            
+            // Imprimir
+            printBtn.addEventListener('click', () => {
+                if (!currentPrayer) return;
+                
+                // Preencher o modal
+                printContent.innerHTML = `
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="font-family: 'Cinzel', serif; color: #23395B;">${currentPrayer.title}</h2>
+                        <span style="background-color: #FFF0AA; color: #23395B; padding: 5px 10px; border-radius: 4px; font-size: 14px;">
+                            ${formatCategoryName(currentPrayer.category)}
+                        </span>
+                    </div>
+                    
+                    <div style="font-size: 18px; line-height: 1.8; white-space: pre-line;">
+                        ${currentPrayer.text}
+                    </div>
+                    
+                    <div style="margin-top: 40px; text-align: center; font-style: italic; color: #777;">
+                        Impresso do Portal de Orações Católicas de Augusto Oliveira
+                    </div>
+                `;
+                
+                // Mostrar o modal
+                printModal.classList.add('active');
+            });
+            
+            // Fechar modal
+            closeModal.addEventListener('click', () => {
+                printModal.classList.remove('active');
+            });
+            
+            // Clique fora do modal para fechar
+            printModal.addEventListener('click', (e) => {
+                if (e.target === printModal) {
+                    printModal.classList.remove('active');
+                }
+            });
+            
+            // Confirmar impressão
+            confirmPrint.addEventListener('click', () => {
+                window.print();
+            });
+            
+            // Nova oração aleatória
+            randomPrayerBtn.addEventListener('click', loadRandomPrayer);
+            
+            // Inicializar
+            loadPrayers();
+        });
+    </script>
+</body>
+</html>
